@@ -88,7 +88,7 @@ h3 {
     align-self: center;
     text-align: center;
     width: 30%;
-    margin-bottom: -10%;
+    margin-bottom: -5%;
 }
 
 #lang-form select{
@@ -122,7 +122,17 @@ h3 {
     text-align: center;
     font-size: 16px;
     width: 55%;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
+    display: inline-block;
+    height: 8vw;
+    border: 0;
+    padding: .7em 1em;
+    margin: 4em auto 3em;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(180deg, #ff8521 0%, #fa7d17 80%, #f87204 100%);
+    box-shadow: 2px 5px 30px rgba(63, 200, 201, .4);
 }
 
 .fa {
