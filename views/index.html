@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <title>MontyHacksVI Translator</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
+
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="js/script.js"></script>
+
+    <h3 id="lang-header">Select The Language You Are Speaking:</h3>
+    
+    <form id="lang-form">
+      <select name = "Language Selection" id="lang-selection">
+          <option value = "Arabic">Arabic</option>
+          <option value = "Bangla">Bangla</option>
+          <option value = "Chinese (Simplified)">Chinese Simplified</option>
+          <option value = "Chinese (Traditional)">Chinese Traditional</option>
+          <option value = "Czech">Czech</option>
+          <option value = "Danish">Danish</option>
+          <option value = "Dutch">Dutch</option>
+          <option value = "German">German</option>
+          <option value = "Greek">Greek</option>
+          <option value = "English" selected>English</option>
+          <option value = "Finnish">Finnish</option>
+          <option value = "French">French</option>
+          <option value = "Hebrew">Hebrew</option>
+          <option value = "Hindi">Hindi</option>
+          <option value = "Hungarian">Hungarian</option>
+          <option value = "Indonesian">Indonesian</option>
+          <option value = "Italian">Italian</option>
+          <option value = "Japanese">Japanese</option>
+          <option value = "Korean">Korean</option>
+          <option value = "Norwegian">Norwegian</option>
+          <option value = "Portugese">Portugese</option>
+          <option value = "Romanian">Romanian</option>
+          <option value = "Russian">Russian</option>
+          <option value = "Slovak">Slovak</option>
+          <option value = "Spanish">Spanish</option>
+          <option value = "Swedish">Swedish</option>
+          <option value = "Tamil">Tamil</option>
+          <option value = "Thai">Thai</option>
+          <option value = "Turkish">Turkish</option>
+      </select>
+      <input class="btn" id="submit-btn" type="button" value="Change Language"/>
+    </form>
+   
+    <div id="text-container"></div>
+    <div class="btn-container">
+      <button class="btn" id="mic-btn"><img src="../images/mic_icon.png" /></button>
+      <button class="btn" id="mute-btn"><img src="../images/mute_icon.png" /></button>
+    </div>
+  </body>
+</html>
