@@ -41,6 +41,7 @@ recognition.continuous = true;
 
 
 window.addEventListener("DOMContentLoaded", (event) => {
+    event.preventDefault();
     document.getElementById('mic-btn').addEventListener('click', () => {
         recognition.start();
     });
@@ -66,11 +67,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
             let dropdownVal = document.getElementById("lang-selection").value;
             recognition.lang = langTypesSpeech[dropdownVal];
-
+            console.log(langTypesSpeech[dropdownVal]);
             recognition.abort();
         });
 
     });
 });
+
+
 
 
